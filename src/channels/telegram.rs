@@ -4955,6 +4955,6 @@ mod tests {
             "voice message at exactly the duration limit must not be skipped (check is >, not >=)"
         );
         let msg = result.unwrap();
-        assert_eq!(msg.content, "boundary ok");
+        assert_eq!(msg.content, "[Voice] boundary ok");
     }
 }
