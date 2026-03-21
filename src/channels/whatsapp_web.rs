@@ -642,8 +642,6 @@ impl Channel for WhatsAppWebChannel {
             let session_revoked_clone = session_revoked.clone();
             let transcription_config = self.transcription.clone();
             let transcription_manager = self.transcription_manager.clone();
-
-            let transcription_config = self.transcription.clone();
             let voice_chats = self.voice_chats.clone();
 
             let mut builder = Bot::builder()
