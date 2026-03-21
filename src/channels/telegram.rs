@@ -4148,7 +4148,6 @@ mod tests {
 
     #[test]
     fn with_transcription_sets_config_when_enabled() {
-        std::env::remove_var("GROQ_API_KEY");
         let mut tc = crate::config::TranscriptionConfig::default();
         tc.enabled = true;
         tc.api_key = Some("fake-key".to_string()); // Groq registers; manager builds
